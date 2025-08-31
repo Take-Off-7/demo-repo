@@ -13,6 +13,7 @@ def return_backward_string(text: str) -> str:
 
 # Function to get mode from environment
 def get_mode_value() -> str:
+    raise Exception() # -> To fail test with Exception
     return os.environ.get("APP_MODE", "development")
 
 # Endpoint to reverse a string
@@ -26,7 +27,6 @@ def reverse_string():
 @app.route("/get-mode", methods=["GET"])
 def get_mode():
     mode = get_mode_value()
-    raise Exception() # -> To fail test with Exception
     return jsonify({"mode": mode})
 
 # Run code
