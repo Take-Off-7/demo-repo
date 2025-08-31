@@ -17,10 +17,10 @@ jobs:
                 python-version: [3.8]
 
         env:   
-            APP_MODE: production
-            FLASK_HOST: 0.0.0.0
-            FLASK_PORT: 8000
-            FLASK_DEBUG: 1
+            APP_MODE: ${{ secrets.APP_MODE }}
+            FLASK_HOST: ${{ secrets.FLASK_HOST }}
+            FLASK_PORT: ${{ secrets.FLASK_PORT }}
+            FLASK_DEBUG: ${{ secrets.FLASK_DEBUG }}
 
         steps:
             - name: Checkout repo
