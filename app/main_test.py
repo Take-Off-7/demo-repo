@@ -14,7 +14,7 @@ class TestFunctions(unittest.TestCase):
 
     def test_get_mode_value(self):
         self.assertEqual(get_mode_value(), "test")
-        del os.environ["APP_MODE"]
+        # del os.environ["APP_MODE"]
         self.assertEqual(get_mode_value(), "development")
 
 if __name__ == "__main__":
