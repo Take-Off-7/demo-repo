@@ -26,7 +26,7 @@ def reverse_string():
 @app.route("/get-mode", methods=["GET"])
 def get_mode():
     mode = get_mode_value()
-    raise Exception() # -> To fail test
+    raise Exception() # -> To fail test with Exception
     return jsonify({"mode": mode})
 
 # Run code
