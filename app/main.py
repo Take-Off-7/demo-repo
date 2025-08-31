@@ -28,6 +28,7 @@ def get_mode():
     mode = get_mode_value()
     return jsonify({"mode": mode})
 
+# Run code
 if __name__ == "__main__":
     host = os.environ.get("FLASK_HOST", "0.0.0.0")
     port = int(os.environ.get("FLASK_PORT", 5000))
