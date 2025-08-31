@@ -13,7 +13,7 @@ def return_backward_string(text: str) -> str:
 
 # Function to get mode from environment
 def get_mode_value() -> str:
-    raise Exception() # -> To fail test with Exception
+    # raise Exception() # -> To fail test with Exception
     return os.environ.get("APP_MODE", "development")
 
 # Endpoint to reverse a string
